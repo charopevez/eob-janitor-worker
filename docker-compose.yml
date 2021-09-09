@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  eobdb-service:
+    image: 'mongo:5.0'
+    container_name: 'eob-db-test3'
+    # restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=eobadm
+      - MONGO_INITDB_ROOT_PASSWORD=eobpass
+    command: mongod --port 10010
+    ports:
+        - '10010:10010'
+    volumes:
+      - ./init.js:/docker-entrypoint-initdb.d/init.js:ro
+      - ../db/mongo-data:/data/db
+  
+  janitor-worker-service:
+    # restart: always
+    # image: janitor-worker:latest
+    # container_name: janitor-worker
+    build: 
+      context: .
+    ports:
+      - 10025:10025
+    volumes:
+      - ./app:/app 

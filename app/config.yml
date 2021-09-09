@@ -1,0 +1,18 @@
+---
+debug: true
+db:
+  engine: mongodb
+  host: eobdb-service
+  port: 10010
+  username: eobuser
+  password: eobuserpass
+  auth_db: eob_system
+  database: eob_system
+  collections: 
+    - twitter_msg
+twitter_api:
+  access_token: 129606474-PRkkJKsPptFpxuaDAKTvdE95tvtLQw3Tax26eiFU
+  access_token_secret: s2rvgKP2fLFdnDVpxvCxRELXEpoifDq4frSBLn55v3uac
+  api_kei: kwrpezsdCNFZBzvI2YXgzK7s9
+  api_secret_kei: mjE0EZ2KiFz9VGLvYTeymMPXaWlvcBb3Hkmt10qdip4YBO5cmZ
+  bearer_token: AAAAAAAAAAAAAAAAAAAAAMl2RAEAAAAAwKy7h%2FTPbvyNWC6yjo5gQEbE8QE%3DgJhQuP2fOBXTFc0up3QvPSS5begr6kpS4itJsHSk4ypFbriGFF

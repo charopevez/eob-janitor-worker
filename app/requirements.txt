@@ -1,0 +1,11 @@
+click==7.1.2
+fastapi==0.68.0
+h11==0.11.0
+pydantic==1.8.2
+starlette==0.14.2
+uvicorn==0.15.0
+PyYAML==5.4.1
+motor==2.5.1
+pandas
+nltk
+numpy
